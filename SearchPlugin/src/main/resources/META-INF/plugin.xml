@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.example.occurrence</id>
+    <name>Occurrence Search</name>
+    <vendor email="ivanivanfomenko@gmail.com">Ivan Fomenko</vendor>
+    <version>1.0.0</version>
+
+    <description>
+        A simple toolwindow that searches for occurrences of a string inside a directory,
+        using coroutines and streaming file scanning.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+                id="Occurrence Search"
+                factoryClass="com.example.occurrence.OccurrenceSearchToolWindowFactory"
+                anchor="right"
+                canCloseContent="false"/>
+    </extensions>
+</idea-plugin>
